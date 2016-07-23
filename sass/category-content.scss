@@ -86,6 +86,10 @@
 		margin-left: 62px;
 	}
 }
+.title-black{
+	color: #2b2b2b;
+	font-weight: 600;
+}
 .submenu-list-style-header{
 	> i{
 		float: left;
@@ -109,9 +113,9 @@
 	width: 14px;
 	height: 14px;
 	&.blue{
-		border: 1px solid #4d9cba;
+		border: 1px solid #00a2e0;
 		.icon{
-			color: #4d9cba;
+			color: #00a2e0;
 		}
 	}
 	&.red{

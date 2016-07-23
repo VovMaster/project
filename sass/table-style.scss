@@ -2,6 +2,9 @@
 	width: 46.4%;
 	float: left;
 }
+td {
+	text-align: center;
+}
 .table-style{
 	background-color: #ffffff;
 	tr{
@@ -12,13 +15,20 @@
 	td{
 		padding: 4px 3px;
 		line-height: 30px;
-
-		&:nth-child(1){
-			text-align: center;
-			width: 70px;
+		border-right: 1px solid #ececec;
+		&:first-child {
+			border-right: none;
 		}
-		
-
+	}
+	.icon {
+		color: #d3d3d3;
+		text-decoration: none;
+		font-size: 16.5px;
+		display: inline-block;
+		vertical-align: middle;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }
 .header-style-gray{
@@ -37,4 +47,9 @@
 	font-size: 16px;
 	line-height: 18px;
 	padding: 6px 3px;
+	width: 65px;
+	text-align: center;
+	float: right;
+	margin-left: 8px;
+	min-height: 30px;
 }
