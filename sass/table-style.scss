@@ -10,17 +10,31 @@
 		}
 	}
 	td{
+		padding: 4px 3px;
+		line-height: 30px;
+
 		&:nth-child(1){
-			background-color: #d3d3d3;
+			text-align: center;
+			width: 70px;
 		}
+		
+
 	}
 }
 .header-style-gray{
 	background-color: #d3d3d3;
-	padding: 7px 19px 7px 9px;
+	padding: 7px 17px 7px 9px;
 	color: #5b5b5b;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 26px;
 	margin-bottom: 2px;
+}
+.date{
+	background-color: #d3d3d3;
+	color: #5c5c5c;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 6px 3px;
 }
