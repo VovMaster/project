@@ -1,0 +1,65 @@
+.block-style{
+	padding-right: 22px;
+	font-size: 14px;
+	line-height: 16px;
+	width: 46.8%;
+	float: left;
+}
+.block-style-header{
+	border-bottom: 1px solid #e5e5e5;
+}
+.info-icons-block{
+	> * {
+		width: 18px;
+		height: 18px;
+		background-color: #dedede;
+		margin-right: 1px;
+		display: block;
+		float: left;
+		text-align: center;
+	}
+	a{
+		text-decoration: none;
+	}
+	.icon{
+		color: #bdbdbd;
+	}
+}
+.icon-home-messages-menu-fav{
+	font-size: 21px;
+	line-height: 18px;
+	margin-right: -1px;
+	display: block;
+}
+.icon-home-messages-timer{
+	font-size: 11.5px;
+	line-height: 18px;
+	display: block;
+
+}
+.star-color.active{
+	background-color: #099cdf;
+	.icon{
+		color: #ffffff;
+	}
+}
+.clock-color.active{
+	background-color: #fabe10;
+	.icon{
+		color: #ffffff;
+	}
+}
+.list-style{
+	padding-right: 12px;
+	font-size: 14px;
+	margin-top: 9px;
+	margin-bottom: 39px;
+	.btn{
+		margin-right: 7px;
+	}
+	li{
+		margin-bottom: 6px;
+		line-height: 13px;
+	}
+}
+

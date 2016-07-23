@@ -1,0 +1,107 @@
+.menu-category{
+	background-color: #00a3e0;
+	float: right;
+	width: 31%;
+	position: relative;
+	padding-top: 18px;
+	z-index: 999;
+
+	li{
+		border-top: 1px solid #53d2ff;
+		a{
+			display: block;
+			color: #ffffff;
+		}
+	}
+	.icon-home-messages-menu-fav{
+		font-size: 18px;
+		margin-right: -2px;
+	}
+	.icon-missions{
+		font-size: 10px;
+		margin-top: -1px;
+	}
+	.icon-home-messages-menu-done{
+		margin-right: -1px;
+		margin-top: -1px;
+	}
+	.icon-home-messages-menu-all{
+		font-size: 15px;
+		margin-top: -1px; 
+	}
+	.icon-home-messages-menu-todo{
+		font-size: 17px;
+		margin-right: -1px;
+	}
+	.icon-home-messages-info{
+		font-size: 17px;
+		margin-right: -1px;
+	}
+	.icon-home-messages-menu-trial{
+		font-size: 17px;
+		margin: -1px -2px 0 0;
+	}
+}
+.arrow-next{
+	background-color: #7cd1ee;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 8.5px;
+	margin-left: 11px;
+	position: absolute;
+	left: 0;
+	top: 9px;
+	padding: 3px 5px;
+	.icon{
+		margin-top: 1px;
+		display: block;
+	}
+}
+.menu-category-style{
+	padding: 8px 8px 8px 11px;
+	li{
+		padding: 3px 0;
+		line-height: 23px;
+	}
+	.circle-block{
+		border: 1px solid #ffffff;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		top: 50%;
+		right: 3px;
+		margin-top: -8px;
+		.icon{
+			color: #ffffff;
+			line-height: 16px;
+			display: block;
+		}
+	}
+	a{
+		text-decoration: none;
+		position: relative;
+		padding-right: 25px;
+		&:active, &.current{
+			background-color: #ffffff;
+			color: #35adcf;
+			.circle-block{
+				border: 1px solid #35adcf;
+			}
+			.icon{
+				color: #35adcf;
+			}
+			&:after{
+				content: " ";
+				position: absolute;
+				right: 100%;
+				top: 0;
+				width: 0;
+				height: 0;
+				border-top: 11px solid transparent;
+				border-right: 4px solid #ffffff;
+				border-bottom: 11px solid transparent;
+			}
+		}
+		
+	}
+}
