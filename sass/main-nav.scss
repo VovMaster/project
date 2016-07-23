@@ -1,7 +1,7 @@
 .main-nav {
 	background: #f2fafd;
-	border-left: 1px solid #00a3e0;
-	border-right: 3px solid #00a3e0;
+	border-left: 1px solid #00a2e0;
+	border-right: 3px solid #00a2e0;
 	border-top: 1px solid #3b8ca9;
 	.icon {
 		display: inline-block;
@@ -48,7 +48,7 @@
 		font-size: 13px;
 	}
 	> div {
-		background: #00a3e0;
+		background: #00a2e0;
 		margin: 0 -3px 0 -1px;
 		width: 187px;
 		position: relative;
@@ -66,7 +66,7 @@
 	}
 	.close-menu {
 		background: #92daf2 none repeat scroll 0 0;
-		color: #00a3e0;
+		color: #00a2e0;
 		font-size: 17px;
 		left: 10px;
 		padding: 4px;
@@ -170,7 +170,7 @@
 }
 
 .menu-hide {
-	background: #00a3e0;
+	background: #00a2e0;
 	> div {
 		width: 40px;
 	}
@@ -194,7 +194,7 @@
 	}
 	.menu-ico {
 		display: block;
-		color: #fff;
+		color: #ccecf9;
 		line-height: 39px;
 		margin: 0;
 		text-align: center;
@@ -210,7 +210,7 @@
 			 	right: 100%;
 			 	margin-right: 4px;
 			 	top: 7px;
-			 	border: 1px solid #00a3e0;
+			 	border: 1px solid #00a2e0;
 			 	min-width: 120px;
 			 	display: none;
 			 	> a {
@@ -224,7 +224,7 @@
 				&:before {
 					content: " ";
 					display: block;
-					border-left: 12px solid #00a3e0;
+					border-left: 12px solid #00a2e0;
 					border-top: 10px solid transparent;
 					border-bottom: 10px solid transparent;
 					position: absolute;
@@ -264,7 +264,7 @@
 		a {
 			text-align: center;
 			background: #0188c8;
-			color: #fff;
+			color: #bbdef1;
 			font-size: 10px;
 			line-height: 10px;
 			padding: 8px 5px;
