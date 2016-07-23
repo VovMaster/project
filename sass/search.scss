@@ -40,5 +40,8 @@
 	border-right: 1px solid #cdcdcd;
 	position: relative;
 	display: block;
+	&:hover {
+		text-decoration: none;
+	}
 
 }

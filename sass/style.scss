@@ -26,3 +26,10 @@ html, body{
 		vertical-align: top;
 	}
 }
+a {
+	color: #3a98d6;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}

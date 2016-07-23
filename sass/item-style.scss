@@ -1,0 +1,26 @@
+.item-style {
+	counter-reset: list; 
+	padding: 0;
+	li {
+		list-style-type: none;
+		padding-right: 32px;
+		position: relative;
+		line-height: 21px;
+		margin: 16px 0 26px;
+		font-size: 17px;
+		&:before {
+			counter-increment: list;
+			content: counter(list);
+			height: 22px;
+			position: absolute;
+			right: -3px;
+			top: -1px;
+			border-radius: 100%;
+			border: 2px solid #d1d1d1;
+			line-height: 18px;
+			text-align: center;
+			color: #d1d1d1;
+			width: 22px;
+		}
+	}
+}

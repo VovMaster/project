@@ -67,13 +67,16 @@
 		position: relative;
 		margin-left: 80px;
 	}
-	.blue-link{
-		text-decoration: underline;
-	}
 	p{
 		font-size: 12px;
 		padding-right: 22px;
 		margin-bottom: 0;
+		a{
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 	.info-icons-block{
 		float: left;
