@@ -1,0 +1,35 @@
+.breadcrumbs {
+	color: #767676;
+	font-weight: 700;
+	list-style: none;
+	padding: 8px 26px;
+	background: #e7e7e7;
+	margin: 0;
+	li {
+		display: inline-block;
+		&:not(:first-child):before {
+			font-weight: 400;
+			display: inline-block;
+			vertical-align: middle;
+			font-family: 'icomoon' !important;
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+
+			/* Better Font Rendering =========== */
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			@extend .icon-arrow-left:before;
+			font-size: 10px;
+			margin: 0 12px 0 16px;
+		}
+	}
+	a {
+		font-weight: 400;
+		color: inherit;
+	}
+}

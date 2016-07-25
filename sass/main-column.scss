@@ -1,5 +1,5 @@
 .main-column{
-	padding: 9px 16px 9px 19px;
+	padding: 3px 16px 9px 19px;
 	background-color: #f2f2f2;
 	border: 1px solid #d0d0d0;
 	width: 100%;
@@ -9,4 +9,84 @@
 	border: 1px solid #e7e7e7;
 	padding: 5px;
 	overflow: hidden;
+	margin-bottom: 25px;
+}
+.header-block {
+	background: #12397c;
+	color: #fff;
+	padding: 15px;
+	position: relative;
+	h2 {
+		font-size: 18px;
+		margin: 0;
+	}
+	.search {
+		position: absolute;
+		left: 12px;
+		top: 9px;
+		width: 405px;
+		font-size: 12px;
+		color: #a7bbed;
+		.form-control {
+			height: 32px;
+			border-color: #a7bbed;
+			color: #fff;
+			font-size: 12px;
+			background: #47659b;
+			 @include placeholder(#a7bbed);
+		}
+		.search-dropdown-title {
+			font-size: 12px;
+			color: #a7bbed;
+			margin-top: 5px;
+			border-color: #a7bbed;
+			padding-left: 42px;
+		}
+		.dropdown {
+			background: #47659b;
+			left: 33px;
+		}
+		.dropdown .open-dropdown {
+			font-size: 10px
+		}
+		.dropdown .close-dropdown {
+			font-size: 9px;
+		}
+		.submit-search {
+			width: 32px;
+			background: #f6faff;
+			.icon  {
+				font-size: 18px;
+				color: #254168;
+			}
+		}
+	}
+}
+
+.date-calend {
+	background: #efefef;
+	position: relative;
+	text-align: center;
+	color: #5c5c5c;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: 700; 
+	margin-bottom: 8px;
+	.icon {
+		text-decoration: none;
+		background: #d2d2d2;
+		height: 20px;
+		width: 20px;
+		font-size: 14px;
+		text-align: center;
+		line-height: 20px;
+		position: absolute;
+		left: 7px;
+		top: 5px;
+		color: #9e9e9e;
+	}
+	.icon-home-arrow-right {
+		left: auto;
+		right: 7px;
+	}
 }

@@ -201,6 +201,7 @@
 	}
 	.menu-content {
 		margin-right: 0;
+		border-top: 1px solid #4bc7ff;
 		> li {
 			position: relative;
 			border-bottom: 1px solid #4bc7ff;
@@ -253,6 +254,12 @@
 			 		display: block;
 			 	}
 			 }
+		}
+	}
+	.top-main-nav {
+		+ .line {
+			opacity: 0;
+			margin-bottom: 17px;
 		}
 	}
 	.menu-content2 {

@@ -10,7 +10,8 @@
   display: inline-block;
   margin-bottom: 0; // For input.btn
  /* font-weight: $btn-font-weight;*/
- font-weight: 500;
+ font-weight: 700;
+ font-size: 21px;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -18,7 +19,7 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   white-space: nowrap;
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+  padding: 3px 20px;
   @include user-select(none);
   border-radius: 0;
   text-decoration: none;
@@ -151,6 +152,7 @@ a.btn {
   /*@include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);*/
   font-size: 17px;
   padding: 8px 24px;
+  font-weight: 400;
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
@@ -160,6 +162,7 @@ a.btn {
 .btn-xs {
   /*@include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);*/
   font-size: 11px;
+   font-weight: 400;
   line-height: 11px;
   padding: 3px 7px;
   .icon{
@@ -170,6 +173,7 @@ a.btn {
 .btn-xxs{
   font-size: 10px;
   padding: 0 5px;
+  font-weight: 400;
   line-height: 12px;
   .icon{
     font-size: 8px;
@@ -204,4 +208,38 @@ input[type="button"] {
   &.btn-block {
     width: 100%;
   }
+}
+
+.buttons-group {
+  padding: 15px 0 5px; 
+  border-bottom: 1px solid #cdcdcd;
+  .btn {
+    font-style: italic;
+    margin-left: 7px;
+    margin-bottom: 10px;
+    .icon {
+      font-size: 26px;
+      vertical-align: middle;
+      border-left: 1px solid #fff;
+      display: inline-block;
+      margin: -3px -10px 0 7px;
+      padding-left: 10px;
+    }
+  }
+}
+.time-button {
+  color: #00a2e0;
+  font-style: normal;
+  background: #d1f4fa;
+  font-size: 14px;
+  margin-left: -10px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle; 
+  margin-top: -4px; 
+  height: 22px;
+  width: 22px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 22px;
 }

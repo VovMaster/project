@@ -11,4 +11,8 @@ $(document).ready(function(){
 		$('.main-nav').addClass('menu-hide');
 		return false
 	});
+    $( "#datepicker" ).datepicker({
+		showOtherMonths: true,
+		selectOtherMonths: true
+    });
 });

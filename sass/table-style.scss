@@ -7,6 +7,7 @@ td {
 }
 .table-style{
 	background-color: #ffffff;
+	margin: 0;
 	tr{
 		&:nth-child(2n+1){
 			background-color: #f6f6f6;
@@ -37,8 +38,18 @@ td {
 	color: #5b5b5b;
 	font-weight: 600;
 	font-size: 18px;
+	position: relative;
 	line-height: 26px;
 	margin-bottom: 2px;
+	.dropdown {
+		width: 196px;
+		position: absolute;
+		left: 8px;
+		top: 5px;
+	}
+	.dropdown-content {
+		margin-top: 2px;
+	}
 }
 .date{
 	background-color: #d3d3d3;
