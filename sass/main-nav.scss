@@ -54,6 +54,12 @@
 		position: relative;
 		z-index: 2;
 	}
+	&:not(.menu-hide){
+		.curent {
+			background: #fcbd0e;
+			color: #1f232f;
+		}
+	}
 }
 .top-main-nav {
 	position: relative;
@@ -198,6 +204,13 @@
 		line-height: 39px;
 		margin: 0;
 		text-align: center;
+		&:hover {
+			text-decoration: none;
+		}
+		&.curent {
+			background: #fcbd0e;
+			color: #1f232f;
+		}
 	}
 	.menu-content {
 		margin-right: 0;

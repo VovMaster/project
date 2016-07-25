@@ -11,6 +11,8 @@ body{
 }
 html, body{
 	height: 100%;
+}
+.wrapper {
 	min-width: 1800px;
 }
 
@@ -47,4 +49,10 @@ a {
 }
 .pull-right {
 	float: right;
+}
+
+@media (max-width: 1800px) {
+	.main-sidebar > div {
+		width: 603px !important;
+	}
 }
