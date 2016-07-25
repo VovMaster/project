@@ -370,7 +370,7 @@ input[type="checkbox"] {
 // issue documented in https://github.com/twbs/bootstrap/issues/15074.
 
 @include input-size('.input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $input-border-radius-small);
-.form-group-sm {
+/*.form-group-sm {
   .form-control {
     height: $input-height-small;
     padding: $padding-small-vertical $padding-small-horizontal;
@@ -393,7 +393,7 @@ input[type="checkbox"] {
     font-size: $font-size-small;
     line-height: $line-height-small;
   }
-}
+}*/
 
 @include input-size('.input-lg', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $input-border-radius-large);
 .form-group-lg {
@@ -616,6 +616,7 @@ input[type="checkbox"] {
   .form-group {
     @include make-row;
   }
+
 
   // Reset spacing and right align labels, but scope to media queries so that
   // labels on narrow viewports stack the same as a default form example.

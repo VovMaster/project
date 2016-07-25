@@ -1,0 +1,29 @@
+.control-label{
+	float: right;
+	width: 103px;
+}
+.wrap-form-control{
+	margin-right: 103px;
+}
+/*.form-group-sm{
+	font-size: 15px;
+	font-weight: 600;
+}*/
+.form-group-sm {
+  .form-control {
+    height: 38px;
+   padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    border: 2px solid #f4f4f4;
+    color: #1c1c1c;
+  }
+  .control-label{
+  	line-height: 38px;
+  	font-weight: 400;
+  }
+}
+.form-style{
+	margin: 0 -7px;
+}

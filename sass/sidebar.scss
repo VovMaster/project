@@ -1,4 +1,5 @@
 .main-sidebar{
+	background-color: #f8f8f8;
 	> div {
 		width: 33.54vw;
 	}
@@ -7,13 +8,23 @@
 	background-color: #00a3e0;
 	position: relative;
 	padding: 18px 12px 6px;
+	color: #fffeff;
 	.btn{
 		float: left;
 		margin-left: 8px;
 	}
 	.title-large{
 		display: inline-block;
-		margin: 19px 0 2px;
+		margin: 19px 0 2px 8px;
+	}
+	.icon{
+		position: absolute;
+		top: 21px;
+		left: 32px;
+		color: #65c3e5;
+	}
+	.icon-top-tools-icon{
+		font-size: 36px;
 	}
 	
 }
@@ -70,4 +81,71 @@
 .separator{
 	margin: 0 4px 0 8px;
 	display: inline-block;
+}
+
+.list-colored{
+	list-style: none;
+	padding-right: 0;
+	margin-top: 14px;
+
+	.icon{
+		line-height: 86px;
+		color: #fabb16;
+	}
+	.icon-update{
+		font-size: 38px;
+	}
+	.icon-ticket-cancel{
+		font-size: 50px;
+	}
+	.icon-data{
+		font-size: 42px;
+	}
+	.icon-add-note{
+		font-size: 50px;
+		margin-left: 11px;
+	}
+	.icon-no-restor{
+		font-size: 41px;
+	}
+	.icon-restor{
+		font-size: 42px;
+	}
+	li{
+		padding: 8px;
+		background-color: #ffffff;
+		margin-bottom: 10px;
+	}
+}
+.title-yellow{
+	color: #fabb16;
+	font-weight: 400;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 11px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e5e0e6;
+	display: inline-block;
+	letter-spacing: 0;
+	a{
+		color: #fabb16;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.gray-square{
+	width: 86px;
+	height: 86px;
+	background-color: #f8f8f8;
+	float: right;
+	text-align: center;
+}
+.list-colored-content{
+	margin-right: 86px;
+	padding: 0 17px;
+	font-size: 11px;
+	line-height: 14px;
+	letter-spacing: 0.65px;
 }
