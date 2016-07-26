@@ -124,12 +124,82 @@
 			padding: 0;
 			background: #fff;
 			color: #f4f4f4;
-			height: 49px;
+			height: auto;
+			line-height: 44px;
+			width: 14%;
 			a {
 				text-align: center;
 				border: none;
 				background: #fff;
+				display: block;
 				color: #5f5f5f;
+			}
+			&.dateNewAssignments {
+				a {
+					position: relative;
+					&:before {
+						content: " ";
+						display: block;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						border-bottom: 6px solid #ffc611;
+						border-left: 6px solid transparent;
+						border-right: 6px solid transparent;
+					}
+					&:after {
+						content: " ";
+						display: block;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						border-right: 6px solid #00abff;
+						border-top: 6px solid transparent;
+						border-bottom: 6px solid transparent;
+					}
+				}
+			}
+			&.dateBalances {
+				a {
+					position: relative;
+					&:before {
+						content: " ";
+						display: block;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						border-bottom: 12px solid #00a4dd;
+						border-left: 12px solid transparent;
+					}
+				}
+			}
+			&.dateExercised {
+				a {
+					position: relative;
+					&:before {
+						content: " ";
+						display: block;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						border-bottom: 12px solid #dadada;
+						border-left: 12px solid transparent;
+					}
+				}
+			}
+			&.datePendingApproval {
+				a {
+					position: relative;
+					&:before {
+						content: " ";
+						display: block;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						border-bottom: 12px solid #14317f;
+						border-left: 12px solid transparent;
+					}
+				}
 			}
 		}
 		thead {
@@ -145,6 +215,13 @@
 		font-size: 20px;
 		padding: 7px 0; 
 	}
+
+	.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	    background: #fffa90 none repeat scroll 0 0;
+	    /*border: 1px solid #dad55e;*/
+	    color: #777620;
+	}
+
 }
 .datepicker-content {
 	margin-left: 387px;

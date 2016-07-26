@@ -21,6 +21,12 @@ td {
 			border-right: none;
 		}
 	}
+	a {
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 	.icon {
 		color: #d3d3d3;
 		text-decoration: none;
