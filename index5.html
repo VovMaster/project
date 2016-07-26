@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DotanTicket</title>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic&amp;subset=latin,hebrew,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.0.custom/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+<body>
+	<header class="main-header">
+		<div class="wrap-logo">
+			<a href="">
+				<img src="images/logo-manat.png" alt="">
+			</a>
+			<a href="">
+				<img src="images/logo-police.png" alt="">
+			</a>
+		</div>
+		<div class="wrap-notice">	
+			<a href="">
+				<i class="icon icon-messages">
+					<i>5</i>
+				</i>
+				<div>הודעות</div>
+			</a>
+			<a href="">
+				<i class="icon icon-missions">
+					<i>8</i>
+				</i>
+				<div>משימות</div>
+			</a>
+		</div>
+		
+		<div class="wrap-settings">
+			<div class="settings-title">
+				<i class="icon icon-top-tools-icon"></i>
+				<div>כלים</div>
+			</div>
+			<div class="settings-content">
+				<div>
+					<a href="" class="icon icon-fast-trial"></a>
+					<a href="" class="icon icon-print"></a>
+					<a href="" class="icon icon-update"></a>
+				</div>
+				<div>
+					<a href="" class="icon icon-license-cancel"></a>
+					<a href="" class="icon icon-car-cancel"></a>
+					<a href="" class="icon icon-ticket-cancel"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="search-wrap">
+			<form class="search">
+				<input class="form-control" type="text" placeholder="ן חפש מס' דו&#34;ח. נהג. רשיון. טפסים....">
+				<div class="dropdown">
+					<a href="" class="search-dropdown-title">
+						 דוחות <i class="icon-arrow-bottom open-dropdown"></i> <i class="icon-close close-dropdown"></i>
+					</a>
+					<ul class="dropdown-content">
+						<li>
+							<a href="">דוחות</a>
+						</li>
+						<li>
+							<a href="">דוחות</a>
+						</li>
+						<li>
+							<a href="">דוחות</a>
+						</li>
+						<li>
+							<a href="">דוחות</a>
+						</li>
+					</ul>
+				</div>
+				<button type="submit" class="submit-search">
+					<i class="icon icon-search"></i>
+				</button>
+			</form>
+		</div>
+
+		<div class="user-header">
+			<div class="user">
+				<img src="images/user.png">
+			</div>
+			<div class="user-content">
+				<b>נורית אדר</b> <br>
+				<span>הבית - "צוות יעריח"</span>
+			</div>
+		</div>
+
+
+		  
+	</header>
+
+
+	<div class="container-table">
+
+		<nav class="main-nav menu-hide">
+			<div>
+				<div class="top-main-nav">
+					<a href="" class="icon-close close-menu"></a>
+					<a href="" class="icon-side-menu-openmenu-pin pin-button"></a>
+					<a href="" class="menu-open">
+						<i></i>
+
+						<i></i>
+						<i></i>
+					</a>
+				</div>
+				<div class="line"></div>
+				<ul class="menu-content">
+					<li>
+						<div>
+							<a href=""><i class="icon icon-home"></i> עמוד בית</a>
+						</div>
+						<i class="menu-ico icon-home"></i>
+					</li>
+					<li>
+						<div>
+							<a href=""><i class="icon icon-side-menu-ticket"></i>דוחות </a>
+							<ul>
+								<li>
+									<a href="">איתור דוח</a>
+								</li>
+								<li>
+									<a href="">קליטת דוח</a>
+								</li>
+							</ul>
+						</div>
+						<i class="menu-ico icon-side-menu-ticket"></i>
+					</li>
+					<li>
+						<div>
+							<a href=""><i class="icon icon-trial-box"></i> תביעות</a>
+							<ul>
+								<li>
+									<a href="">איתור חח</a>
+								</li>
+								<li>
+									<a href="">קליטת דוח</a>
+								</li>
+							</ul>
+						</div>
+						<i class="menu-ico icon-trial-box"></i>
+					</li>
+					<li>
+						<div>
+							<a href=""><i class="icon icon-manual-person"></i> אזרח </a>
+							<ul>
+								<li>
+									<a href="">איתור דוח</a>
+								</li>
+								<li>
+									<a href="">קליטת דוח</a>
+								</li>
+							</ul>
+						</div>
+						<i class="menu-ico icon-manual-person"></i>
+					</li>
+					<li>
+						<div>
+							<a href=""><i class="icon icon-side-menu-person-cancel"></i> פסילות</a>
+							<ul>
+								<li>
+									<a href="">איחור חח</a>
+								</li>
+								<li>
+									<a href="">קליטת דוח</a>
+								</li>
+							</ul>
+						</div>
+						<i class="menu-ico icon-side-menu-person-cancel"></i>
+					</li>
+					<li>
+						<div>
+							<a href=""><i class="icon icon-manual-car"></i> רכב</a>
+							<ul>
+								<li>
+									<a href="">איחור חח</a>
+								</li>
+								<li>
+									<a href="">קליטת דוח</a>
+								</li>
+							</ul>
+						</div>
+						<i class="menu-ico icon-manual-car"></i>
+					</li>
+				</ul>
+				<div class="line"></div>
+				<ul class="menu-content2">
+					<li>
+						<a href=""> <i class="icon icon-side-menu-car-cancel"></i> הורחת <i class="icon icon-side-menu-openmenu-link-hover open-menu-button"></i> </a>
+					</li>
+					<li>
+						<a href=""> <i class="icon icon-home-messages-menu-todo"></i> שירת הסירנה <i class="icon icon-side-menu-openmenu-link-hover open-menu-button"></i> </a>
+					</li>
+					<li>
+						<a href=""> <i class="icon icon-side-menu-fall"></i> מפל <i class="icon icon-side-menu-openmenu-link-hover open-menu-button"></i> </a>
+					</li>
+					<li>
+						<a href=""> <i class="icon icon-box"></i> מדותן קודמת <i class="icon icon-side-menu-openmenu-link-hover open-menu-button"></i> </a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div>
+
+			<ul class="breadcrumbs">
+				<li><a href="">דו"ח(מצלמה)</a></li>
+				<li>פרטידו"ח</li>
+			</ul>
+			<div class="container-table">
+				<section class="main-column">
+
+					<div class="top-page clearfix">
+						<h1>עמוד הב'ת</h1>
+						<div class="time-style pull-left">
+							12:33:26
+						</div>
+						<div class="date-style pull-left">
+							23 בינואר 2016 
+						</div>
+					</div>
+
+					<div class="buttons-group">
+						<a href="" class="btn btn-primary"><i class="icon icon-home-scan"></i> קלוט דוח ידני</a>
+						<a href="" class="btn btn-primary"> נופל בדוחות הדס <i class="time-button">48</i> </a>
+						<a href="" class="btn btn-primary">החזר ר'ש'ון נה'גה</a>
+					</div>
+
+					<section class="progress-group">
+						<div class="progress-group-top">
+							<div class="progress-color1">
+								<i class="icon icon-home-topbar-time"></i> מעכ 36 ששת 
+							</div>
+							<div class="progress-color2">
+								<i class="icon icon-home-topbar-time"></i> מעכ 72 ששת
+							</div>
+						</div>
+						<div class="clearfix">
+							<div class="progress-group-conntent">
+								<div>
+									<div class="top-progress-group-conntent">
+										<div class="ellow-block">
+											<div class="arrow-progress-bottom"></div>
+											<div class="wrap-number">
+												<div class="number">4</div>
+												ממוצע
+											</div>
+											5
+										</div>
+										<div class="ellow-text">םר' מ</div>
+									</div>
+									<h6>
+										שוטרים להם בוטלו יותר משני דוחות
+									</h6>
+								</div>
+								<div>
+									<div class="top-progress-group-conntent">
+										<div class="ellow-block">
+											<div class="arrow-progress-top"></div>
+											<div class="wrap-number" style="top: 20px;">
+												<div class="number">6</div>
+												ממוצע
+											</div>
+											15
+										</div>
+										<div class="ellow-text">םר' מ</div>
+									</div>
+									<h6>
+										מיעד' משפט פנו"ם בשלוחה
+									</h6>
+								</div>
+								<div>
+									<div class="top-progress-group-conntent">
+										<div class="border-circle-block">
+											<div class="arrow-progress-top"></div>
+											40<span>%</span>
+										</div>
+									</div>
+									<h6>
+										מימוש של תאריכי משפט
+									</h6>
+								</div>
+								<div>
+									<div class="top-progress-group-conntent">
+										<div class="text-block-progress text-block-progress-bottom">
+											<div class="arrow-progress-bottom"></div>
+											15
+										</div>
+									</div>
+									<h6>
+										פנקסים פעילים בשלוחה
+									</h6>
+								</div>
+								<div>
+									<div class="top-progress-group-conntent">
+										<div class="text-block-progress text-block-progress-bottom">
+											<div class="arrow-progress-bottom"></div>
+											<i class="icon icon-home-topbar-time"></i>
+											22
+										</div>
+									</div>
+									<h6>
+										דוחות שממתינים לטיפול
+									</h6>
+								</div>
+								<div>
+									<div class="top-progress-group-conntent">
+										<div class="text-block-progress text-block-progress-top">
+											<div class="arrow-progress-top"></div>
+											<i class="icon icon-home-topbar-time"></i>
+											12
+										</div>
+									</div>
+									<h6>
+										דוחות חר'ג'ם
+									</h6>
+								</div>
+							</div>
+							<div class="progress-group-info-wrap">
+								<div class="progress-group-info">
+									<div>
+										<h6>מועד אחרון לתשלום</h6>
+										<div class="progress-group-info-date">20.2.16</div>
+										נותח 20 ימים
+										<a href="" class="icon icon-edit"></a>
+									</div>
+									<div>
+										<h6>מועד אחרון להגשת בקשה להישפט</h6>
+										<div class="progress-group-info-date date-red">11.2.16</div>
+										נותרו 9 ימים <br>
+										<b>בבית משפט השלום</b>
+										<a href="" class="icon icon-edit"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="section-tab">
+						<ul class="menu-tabs">
+							<li>
+								<a href="">כל ההסטוריה</a>
+							</li>
+							<li class="active">
+								<a href="">פעולות ברוה</a>
+							</li>
+							<li>
+								<a href="">ש'ט' פרט' דוח</a>
+							</li>
+							<li>
+								<a href="">ש'ט' פרט' בעל דוח</a>
+							</li>
+							<li>
+								<a href="">ש'מ' פרט' רכב</a>
+							</li>
+							<li>
+								<a href="">מצבי טיפול</a>
+							</li>
+							<li>
+								<a href="">הערות</a>
+							</li>
+						</ul>
+						<div class="content-tab">
+							<ul>
+								<li>
+									<div class="blue-style">
+										<div class="blue-style-figure">
+											<div class="blue-style-circle"></div>
+										</div>
+										<div class="blue-style-text">
+											<b>24/01/16</b><br>
+											<div class="time">16:08</div>
+											<div>עודכן במערכת:<br>
+											27/01/16 12:00
+											</div>
+										</div>
+									</div>
+									<div class="message">
+										<div class="user">
+											<img src="images/user2.png">
+										</div>
+										<a href="" class="btn btn-xs btn-dark-gray">פרטים</a>
+										<div class="users-text">
+											
+											<div>
+												
+												<div class="user-name">דקלה לוי</div>
+												<p>עוכבה את השם ח"ם מועלם צ <a href="" class="icon icon-history-change"></a> ח'ם מועלם</p>
+											</div>
+
+										</div>
+										
+									</div>
+
+								</li>
+								<li>
+									<div class="blue-style">
+										<div class="blue-style-figure">
+											<div class="blue-style-circle white"></div>
+										</div>
+										<div class="blue-style-text">
+											<b>24/01/16</b><br>
+											<div class="time">16:08</div>
+										</div>
+									</div>
+									<div class="message">
+										<div class="user">
+											<img src="images/user3.png">
+										</div>
+										<a href="" class="btn btn-xs btn-dark-gray">פעולות</a>
+										<div class="users-text">
+
+											<div>
+												
+												<div class="user-name">אר'אל 'רון</div>
+												<p>ביצע פעולה של זימון למשפט
+													<div class="top-line">הערות הפעולה בוצעה מכי'ון שלא היה ספק</>
+												</p>
+											</div>
+											
+										</div>
+									</div>
+
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="clearfix">
+						<div class="bg-white-block wrap-table">
+							<div class="header-style-gray">
+								היסטוריית פעולות
+								<div class="dropdown">
+									<a class="dropdown-title" href="">הכל <i class="icon-arrow-bottom open-dropdown"></i> <i class="icon-close close-dropdown"></i></a>
+									<ul class="dropdown-content">
+										<li>
+											<a href="">דוחות</a>
+										</li>
+										<li>
+											<a href="">דוחות</a>
+										</li>
+										<li>
+											<a href="">דוחות</a>
+										</li>
+										<li>
+											<a href="">דוחות</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="date-calend">
+								<a href="" class="icon icon-arrow-left"></a>
+								23.01.16
+								<a href="" class="icon icon-home-arrow-right"></a>
+							</div>
+							<table class="table-style table">
+								<tbody>
+									<tr>
+										<td class="text-right"><div class="date">13:40</div> קליטת <a href="" >בום 12345</a> אןר אדום, <a href="">ס1-כם!</a></td>
+										<td><a href="" class="icon icon-info"></a></td>
+									</tr>
+									<tr>
+										<td class="text-right"><div class="date">13:40</div> קליטת <a href="" >בום 12345</a> אןר אדום, <a href="">ס1-כם!</a></td>
+										<td><a href="" class="icon icon-info"></a></td>
+									</tr>
+									<tr>
+										<td class="text-right"><div class="date">13:40</div> קליטת <a href="" >בום 12345</a> אןר אדום, <a href="">ס1-כם!</a></td>
+										<td><a href="" class="icon icon-info"></a></td>
+									</tr>
+									<tr>
+										<td class="text-right"><div class="date">13:40</div> קליטת <a href="" >בום 12345</a> אןר אדום, <a href="">ס1-כם!</a></td>
+										<td><a href="" class="icon icon-info"></a></td>
+									</tr>
+									<tr>
+										<td class="text-right"><div class="date">13:40</div> קליטת <a href="" >בום 12345</a> אןר אדום, <a href="">ס1-כם!</a></td>
+										<td><a href="" class="icon icon-info"></a></td>
+									</tr>
+									<tr>
+										<td class="text-right"><div class="date">13:40</div> קליטת <a href="" >בום 12345</a> אןר אדום, <a href="">ס1-כם!</a></td>
+										<td><a href="" class="icon icon-info"></a></td>
+									</tr>
+									<tr>
+										<td class="text-right"><div class="date">13:40</div> קליטת <a href="" >בום 12345</a> אןר אדום, <a href="">ס1-כם!</a></td>
+										<td><a href="" class="icon icon-info"></a></td>
+									</tr>
+									<tr>
+										<td class="text-right"><div class="date">13:40</div> קליטת <a href="" >בום 12345</a> אןר אדום, <a href="">ס1-כם!</a></td>
+										<td><a href="" class="icon icon-info"></a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="calendar-wrap">
+							<div class="bg-white-block">
+								<div class="datepicker-wrap">
+									<div id="datepicker"></div>
+								</div>
+								<div class="datepicker-content">
+									<h4>לוח שנה יחידתי</h4>
+									<p>ניתן לשלוח הקצאות לנייד של כל
+									שוטר או קבוצה, איפסום דולור סיס
+									אמט, קונסקטורר אד'פיסינג אלית
+									הוענ'ב ה'ושבב-</p>
+									<ul class="item-color">
+										<li><div style="background: #f5bc0b"></div> הקצאות חדשות</li>
+										<li><div style="background: #00a1e9"></div> יתרות</li>
+										<li><div style="background: #d7d7d7"></div> ממושו</li>
+										<li><div style="background: #113a7c"></div> ממתין לאישור</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</section>
+				
+				<aside class="main-sidebar">
+					<div>
+						<div class="sidebar-header">
+							<a class="close icon-close" href=""></a>
+							<h2 class="title-large">פרטו דוח</h2>מצב עריכה
+							
+						</div>
+						<div class="sidebar-content">
+							<form class="form-style">
+								<div class="form-group form-group-sm">
+								    <label class="control-label">סוג עב'רה</label>
+								    <div class="wrap-form-control">
+								      <input type="email" class="form-control"  placeholder="">
+								    </div>
+								</div>
+								<div class="form-group form-group-sm">
+								    <div class="wrap-form-control">
+								      <input type="email" class="form-control" placeholder="">
+								    </div>
+								</div>
+								<div class="form-group form-group-sm">
+								    <label class="control-label">מיקום</label>
+								    <div class="wrap-form-control">
+								      <input type="email" class="form-control"  placeholder="">
+								      <a href="" class="plus"></a>
+								    </div>
+								</div>
+								<div class="form-group form-group-sm">
+								    <div class="wrap-form-control vertical-line">
+								      <input type="email" class="form-control" placeholder="">
+								    </div>
+								</div>
+								<div class="form-group form-group-sm">
+									<label class="control-label">סכום קנס מקורי</label>
+								    <div class="wrap-form-control">
+								      <input type="email" class="form-control" id="inputEmail3" placeholder="">
+								    </div>
+								</div>
+								<div class="form-group form-group-sm">
+									<label class="control-label">עורך הדו"ח</label>
+								    <div class="wrap-form-control">
+								      <input type="email" class="form-control" id="inputEmail3" placeholder="">
+								    </div>
+								</div>
+								<div class="form-group form-group-sm">
+									<label class="control-label">נוס'רתדו"ח</label>
+								    <div class="wrap-form-control">
+								      <input type="email" class="form-control" id="inputEmail3" placeholder="">
+								    </div>
+								</div>
+								<div class="form-group form-group-sm">
+									<label class="control-label">הליך משפטי</label>
+								    <div class="wrap-form-control">
+								      <input type="email" class="form-control" id="inputEmail3" placeholder="">
+								    </div>
+								</div>
+								<div class="form-group form-group-sm">
+									<label class="control-label">הליך משפטי</label>
+								    <div class="wrap-form-control">
+								      <input type="email" class="form-control" id="inputEmail3" placeholder="">
+								    </div>
+								</div>
+								<div class="line-horizontal"></div>
+								<div class="wrap-center">
+									<button type="submit" class="btn btn-primary btn-lg"><i>שמור</i></button>
+								</div>
+							</form>
+						</div>
+					 </div>
+				</aside>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+</body>
+</html>
