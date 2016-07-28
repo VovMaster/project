@@ -151,6 +151,12 @@ $progress-color4: #949494;
 		top: 0;
 		right: -27px;
 	}
+	.icon-home-messages-menu-done {
+		font-size: 90px;
+		position: static;
+		display: block;
+		margin: -20px 0;
+	}
 }
 .text-block-progress-bottom {
 	color: $progress-color1;
@@ -226,4 +232,74 @@ $progress-color4: #949494;
 }
 .date-red {
 	color: $progress-color2;
+}
+
+.statistics-block-wrap {
+	margin-top: 18px;
+}
+.statistics-block-wrap .progress-group-conntent {
+	width: 66.5%;
+	h6 {
+		color: #000;
+		font-weight: normal;
+	}
+}
+.statistics-block-container {
+	float: left;
+	width: 15.5%;
+	padding-right: 15px;
+}
+.statistics-block {
+	border: 1px solid #cdcdcd;
+	background: #fff;
+	color: #12397c;
+	padding: 10px;
+	text-align: center;
+	h6 {
+		border-top: 1px solid #12397c;
+		line-height: 30px;
+	}
+	.icon-statistics {
+		font-size: 65px;
+		height: 103px;
+		padding-top: 18px;
+	}
+}
+
+.line-text {
+	position: relative;
+	margin: 15px 0 21px;
+	> span {
+		background: #fff;
+		padding: 0 10px;
+		position: relative;
+		z-index: 2;
+	}
+	&:after {
+		content: " ";
+		display: block;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		top: 6px;
+		background: #00a2e0;
+		height: 1px;
+	}
+}
+
+.progress-group-info-time {
+	font-size: 24px;
+	margin: 10px 0;
+	font-weight: 700;
+}
+.edit-block-group-info {
+	position: relative;
+	background: #e7e7e7;
+	text-align: center;
+	margin-top: -5px;
+	line-height: 29px;
+	margin-bottom: 14px;
+	.icon {
+		background: #bfbfbf;
+	}
 }

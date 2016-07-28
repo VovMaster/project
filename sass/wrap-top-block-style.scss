@@ -1,5 +1,10 @@
 .wrap-top-block-style{
 	padding: 18px 0 0;
+	display: table;
+	width: 100%;
+	> * {
+		display: table-cell !important;
+	}
 	.btn{
 		display: inline-block;
 		font-size: 20px;
@@ -17,6 +22,7 @@
 	.text-primary{
 		font-size: 20px;
 	}
+
 }
 .top-block-dashed{
 	border: 2px dashed #dadada;

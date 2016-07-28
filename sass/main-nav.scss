@@ -3,6 +3,8 @@
 	border-left: 1px solid #00a2e0;
 	border-right: 3px solid #00a2e0;
 	border-top: 1px solid #3b8ca9;
+	position: relative;
+	z-index: 999;
 	.icon {
 		display: inline-block;
 		vertical-align: middle;
