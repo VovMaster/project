@@ -120,12 +120,50 @@ $(document).ready(function(){
 
 	$(document).on('click', '.ui-datepicker-next', function () {
 	   datePickerSelect();  
+	   	$('.ui-state-default').on('click', function () {
+		   return false
+		});
 	})
 
 	$(document).on('click', '.ui-datepicker-prev', function () {
 	   datePickerSelect();
+		$('.ui-state-default').on('click', function () {
+		   return false
+		});
 	})
 
+	$('.ui-state-default').on('click', function () {
+	   return false
+	});
 
+
+	$('.table-style-wrap').perfectScrollbar();
+	$('.table-style-wrap').each(function(){
+		var i = 1;
+		if($(this).find('thead').length){
+			$(this).find('thead').clone().appendTo($(this).prev('.header-new').children('.table-style'));
+			$(this).find('thead td').each(function(){
+				var widthTd = $(this).outerWidth();
+				$(this).closest('.table-style-wrap').prev('.header-new').find('td:nth-child(' + i + ')').outerWidth(widthTd);
+				i++;
+			});
+		}else {
+			$(this).addClass('no-thead');
+		}
+
+		
+	});
+
+
+	$(window).resize(function(){
+		$('.table-style-wrap').each(function(){
+			var i = 1;
+			$(this).find('thead td').each(function(){
+				var widthTd = $(this).outerWidth();
+				$(this).closest('.table-style-wrap').prev('.header-new').find('td:nth-child(' + i + ')').outerWidth(widthTd);
+				i++;
+			});
+		});
+	});
 
 });
