@@ -27,7 +27,7 @@ td {
 	.table-style thead td > div {
 		background-color: #efefef;
 		min-height: 32px;
-		padding: 0 34px;
+		padding: 0 14px;
 	}
 	.table-style thead td.td-info > div {
 		padding-left: 10px;
@@ -36,6 +36,7 @@ td {
 	.td-info > div {
 		margin-left: -3px;
 	}
+	
 }
 .no-thead {
 	margin-top: 3px;
@@ -90,7 +91,7 @@ td {
 			line-height: 32px;
 			> div{
 				background-color: #efefef;
-				padding: 0 34px;
+				padding: 0 14px;
 				min-height: 32px;
 			}
 			.td-info{
@@ -109,7 +110,7 @@ td {
 				}
 			}
 			td{
-				padding: 0 46px;
+				padding: 0 14px;
 				line-height: 28px;
 				height: 28px;
 			}
@@ -120,6 +121,11 @@ td {
 			}
 
 		}
+	}
+}
+.table-center{
+	td{
+		text-align: center;
 	}
 }
 .header-style-gray{
@@ -392,4 +398,21 @@ td {
 	line-height: 30px;
 	padding: 0 10px;
 	margin: 2px 0 11px;
+}
+
+.left-column-table{
+	width: 68%;
+	float: right;
+}
+.column-table{
+	width: 50%;
+	padding: 0 13px;
+	float: right;
+}
+.row-13{
+	margin: 0 -13px;
+}
+.rigth-column-table{
+	float: right;
+	width: 32%;
 }
