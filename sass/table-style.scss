@@ -8,6 +8,7 @@ td {
 .table-style-wrap {
 	position: relative;
 	margin-top: 36px;
+	width: 100%;
 }
 .header-new {
 	margin-bottom: -39px;
@@ -78,6 +79,9 @@ td {
 	.icon-info, .icon-marker {
 		margin-left: 14px;
 		margin-right: 4px;
+	}
+	.icon-ticket {
+		margin-left: 9px;
 	}
 	thead{
 		 td{

@@ -48,11 +48,22 @@
 	padding-top: 27px;
 	padding-left: 90px;
 	padding-right: 28px;
+	position: relative;
 	ul{
 		list-style: none;
 		padding-right: 0;
 		padding-bottom: 17px;
-		border-bottom: 1px dashed #e3e3e3;
+		/*border-bottom: 1px dashed #e3e3e3;*/
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 2px;
+			bottom: 0;
+			right: 192px;
+			width: 8px;
+			background-color: #00a2e0;
+		}
 	}
 	.message{
 		background-color: #efefef;
@@ -119,6 +130,39 @@
 		}
 	}
 }
+.line-info {
+	border-bottom: 1px dashed #e3e3e3;
+	position: relative;
+	margin: 10px 200px 10px 0;
+	.blue-style {
+		top: -24px;
+		right: -232px;
+		b {
+			color: #07317b;
+		}
+	}
+	.icon {
+		color: #07317b;
+		font-size: 29px;
+		left: 57px;
+		position: absolute;
+		top: 6px;
+		&:after {
+			border-top: 3px dashed #07317b;
+			content: " ";
+			display: block;
+			margin-right: 4px;
+			position: absolute;
+			right: 100%;
+			top: 17px;
+			width: 43px;
+		}
+	}
+	+ ul {
+		margin-right: 12px;
+		padding-top: 40px;
+	}
+}
 .top-line{
 	font-size: 13px;
 	position: relative;
@@ -178,14 +222,5 @@
 	top: 0;
 	left: 44px;
 	height: 100%;
-	&:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 50%;
-		margin-left: -4px;
-		width: 8px;
-		background-color: #00a2e0;
-	}
 }
+
