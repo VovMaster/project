@@ -27,11 +27,11 @@ td {
 	.table-style thead td > div {
 		background-color: #efefef;
 		min-height: 32px;
-		padding: 0 14px;
+		padding: 0 8px;
 	}
 	.table-style thead td.td-info > div {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 	.td-info > div {
 		margin-left: -3px;
@@ -91,7 +91,7 @@ td {
 			line-height: 32px;
 			> div{
 				background-color: #efefef;
-				padding: 0 14px;
+				padding: 0 8px;
 				min-height: 32px;
 			}
 			.td-info{
@@ -415,10 +415,12 @@ td {
 .rigth-column-table{
 	float: right;
 	width: 32%;
-}.table-style-wrap-white {
+}
+.table-style-wrap-white {
 	padding: 8px;
 	background: #fff;
 	.table-style td {
 		padding-left: 16px;
 		padding-right: 16px;
-	}}
+	}
+}
