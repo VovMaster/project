@@ -238,19 +238,8 @@ td {
 		font-size: 19px;
 		line-height: 20px;
 	}
-	/*.icon-info{
-		width: 20px;
-		height: 20px;
-		line-height: 20px;
-	}*/
-/*	.icon-car{
-
-	}*/
-	.icon-ticket{
-
-	}
 }
-.row-3{
+.row-3{ 
 	margin: 0 -3px;
 }
 .header-icons{
@@ -264,7 +253,8 @@ td {
 		display: block;
 		line-height: 30px;
 		text-align: center;
-		display: inline-block;		&:hover, &:focus {
+		display: inline-block;		
+		&:hover, &:focus {
 			text-decoration: none;
 		}	}
 	.icon-Person-history-wheel{
@@ -295,6 +285,10 @@ td {
 		    text-align: center;
 		}
 	}
+	.icon-info{
+		color: #a7b2c4;
+		font-size: 18px;
+	}
 	a{
 		margin-right: 5px;
 	}
@@ -307,6 +301,29 @@ td {
 		border-right: none;
 		line-height: 17px;
 		height: 26px;
+	}
+	a{
+		font-weight: 600;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.icon-change-indication{
+		color: #f5bc00;
+		margin-right: 5px;
+	}
+	.icon-car{
+		font-size: 22px;
+		line-height: 17px;
+		color: #989898;
+	}
+	.icon-ticket{
+		font-size: 22px;
+		color: #989898;
+	}
+	.icon-info{
+		padding: 0;
 	}
 }
 .text-black{

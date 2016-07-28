@@ -1,0 +1,11 @@
+.wrap-top-block-style{
+	.btn{
+		float: right;
+	}
+}
+.top-block-dashed{
+	border: 2px dashed #dadada;
+	> div{
+		float: right;
+	}
+}
