@@ -136,6 +136,7 @@ $(document).ready(function(){
 	   return false
 	});
 
+	$('.content-tab').perfectScrollbar();
 
 	$('.table-style-wrap').perfectScrollbar();
 	$('.table-style-wrap').each(function(){
