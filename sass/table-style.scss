@@ -207,6 +207,22 @@ td {
 	padding: 5px 21px 5px 6px;
 	 position: relative;
 	 margin-bottom: 5px;
+	 > span{
+	 	position: relative;
+	 	> i{
+	 		background-color: #dda;
+		    background-image: url("../images/red-circle.jpg");
+		    background-position: 0 0;
+		    display: block;
+		    height: 20px;
+		    margin-top: -10px;
+		    position: absolute;
+		    right: 100%;
+		    top: 50%;
+		    width: 20px;
+		    margin-right: 14px;
+	 	}
+	 }
 }
 .table-width{
 	padding: 0 3px;
@@ -221,6 +237,17 @@ td {
 		display: inline-block;
 		font-size: 19px;
 		line-height: 20px;
+	}
+	/*.icon-info{
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+	}*/
+/*	.icon-car{
+
+	}*/
+	.icon-ticket{
+
 	}
 }
 .row-3{
@@ -237,12 +264,51 @@ td {
 		display: block;
 		line-height: 30px;
 		text-align: center;
-		&:hover, &:focus {
+		display: inline-block;		&:hover, &:focus {
 			text-decoration: none;
+		}	}
+	.icon-Person-history-wheel{
+		width: 22px;
+		height: 22px;
+		border-radius: 100%;
+		background-color: #a3b0dd;
+		font-size: 16px;
+		line-height: 22px;
+		color: #08306b;
+		display: inline-block;
+		text-align: center;
+		margin-top: 4px;
+		position: relative;
+		> i{
+			background: #f1ad1c none repeat scroll 0 0;
+		    border: 2px solid #08306b;
+		    border-radius: 100%;
+		    color: #fff;
+		    font-size: 13px;
+		    font-style: normal;
+		    height: 20px;
+		    line-height: 13px;
+		    position: absolute;
+		    right: -8px;
+		    top: -7px;
+		    width: 20px;
+		    text-align: center;
 		}
+	}
+	a{
+		margin-right: 5px;
 	}
 }
 
 .table-style2{
-
+	padding: 8px;
+	background-color: #ffffff;
+	td{
+		border-right: none;
+		line-height: 17px;
+		height: 26px;
+	}
+}
+.text-black{
+	color: #3c3c3c;
 }
