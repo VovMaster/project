@@ -187,10 +187,17 @@ a.btn {
   background-color: #d6d6d6;
   color: #787878;
   padding: 3px 24px;
+  &:hover, &:focus {
+    color: #787878;
+  }
 }
 .btn-dark{
   background-color: #969696;
   color: #ffffff;
+  &:hover, &:focus {
+    background-color: #868686;
+    color: #fff;
+  }
 }
 .btn-thin{
   font-weight: 300;
