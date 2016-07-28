@@ -188,7 +188,13 @@ a.btn {
   color: #787878;
   padding: 3px 24px;
 }
-
+.btn-dark{
+  background-color: #969696;
+  color: #ffffff;
+}
+.btn-thin{
+  font-weight: 300;
+}
 
 // Block button
 // --------------------------------------------------
@@ -235,7 +241,26 @@ input[type="button"] {
       padding-left: 10px;
     }
   }
+  .btn-thin{
+    font-style: normal;
+    .icon{
+      border-left: none;
+      margin: -3px 14px 0 -10px;
+    }
+  }
 }
+.btn-radius{
+  border-radius: 3px;
+}
+.delimiter{
+  height: 41px;
+  background-color: #e4e4e4;
+  width: 1px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 3px 0 9px;
+
+ }
 .time-button {
   color: #00a2e0;
   font-style: normal;

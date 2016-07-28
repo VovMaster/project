@@ -4,6 +4,9 @@
 	> div {
 		width: 33.54vw;
 	}
+	.column-width{
+		width: 48.54vw;
+	}
 }
 .sidebar-header{
 	background-color: #00a3e0;
@@ -27,9 +30,24 @@
 	.icon-top-tools-icon{
 		font-size: 36px;
 	}
+	.icon-ticket-cancel{
+		font-size: 40px;
+		color: #ffffff;
+	}
 	
 }
-
+.bg-light{
+	background-color: #75cef0;
+	width: 62px;
+	height: 62px;
+	padding: 9px 16px;
+	position: absolute;
+	top: 8px;
+	left: 18px;
+	.icon{
+		position: static;
+	}
+}
 .date-block{
 	color: #cbcbcb;
 	float: left;
@@ -55,6 +73,9 @@
 }
 .sidebar-content{
 	padding: 21px 31px;
+	> img{
+		max-width: 100%;
+	}
 }
 .sidebar-content-header{
 	margin-bottom: 14px;

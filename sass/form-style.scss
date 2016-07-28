@@ -66,3 +66,20 @@
 .wrap-center{
 	text-align: center;
 }
+.form-block{
+	margin: 4px 0;
+	padding: 0 15px 0 25px;
+	.wrap-form-control{
+		margin-right: 0;
+	}
+	.btn{
+		min-width: 384px;
+	}
+	.line-horizontal{
+		margin: 36px 0 29px;
+	}
+}
+.form-text{
+	font-size: 16px;
+	margin-bottom: 26px;
+}

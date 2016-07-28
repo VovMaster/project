@@ -46,9 +46,13 @@
 }
 .content-tab{
 	padding-top: 27px;
+	padding-left: 90px;
+	padding-right: 28px;
 	ul{
 		list-style: none;
 		padding-right: 0;
+		padding-bottom: 17px;
+		border-bottom: 1px dashed #e3e3e3;
 	}
 	.message{
 		background-color: #efefef;
@@ -93,7 +97,7 @@
 			font-size: 19px;
 			font-weight: 600;
 		}
-		> div{
+		> div{ 
 			font-size: 16px;
 
 			display: inline-block;
