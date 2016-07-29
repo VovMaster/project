@@ -35,8 +35,16 @@ a {
 	text-decoration: none;
 	&:hover {
 		text-decoration: underline;
+		color: #2abbe8;
+	}
+	&[href^='http']:visited {
+		color: #13397d;
+	}
+	&:active {
+		color: #0092d3;
 	}
 }
+
 .clearfix {
 	&:after {
 		content: "";

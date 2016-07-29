@@ -9,6 +9,8 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<script type="text/javascript" src="jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/perfect-scrollbar.jquery.min.js"></script>
+
+
 	<script type="text/javascript" src="js/scripts.js"></script>
 
 </head>
@@ -220,20 +222,29 @@
 				<li>הזנת חח חדש</li>
 			</ul>
 			<div class="container-table">
-				<section class="main-column background-white">
+				<section class="main-column">
 					<div class="buttons-group">
-						<a href="" class="btn btn-primary btn-thin btn-radius">הסתר את כל החלקים הסרוקים<i class="icon icon-license-cancel"></i></a>
-						<div class="delimiter"></div>
-						<a href="" class="btn btn-dark btn-radius"><i class="icon icon-home-scan"></i>סרוקדו”ח חדש</a>
+						<a href="" class="btn btn-dark"><i class="icon icon-home-scan"></i>סרוקדו”ח חדש</a>
+						<a href="" class="btn btn-dark btn-arrow-left pull-left">
+							<i class="icon-home-messages-v"></i>
+							סרוקדו”ח חדש
+						</a>
+					</div>
+					<div class="top-content clearfix">
 						<div class="date-style pull-left"> 23 בינואר 2016 </div>
+						<div class="wrap-radio-style">
+							<label class="radio-style">
+								<input type="checkbox">
+								<div>בינואר</div>
+								<div>בינואר</div>
+							</label>
+							F3
+						</div>
 					</div>
-					<div class="buttons-block-inline pull-right">
-						<a href="" class="active">מסירה</a>
-						<a href="">דבקה</a>
-						<a href="">חומר מפב'מ'</a>
-					</div>
+
 					<form class="regulation-form">
-						<div class="wrap-regulation-block">
+						<div class="wrap-regulation-block regulation-block-open">
+
 							<div class="regulation-block">
 								<div class="regulation-block-header">
 									<a href="" class="icon icon-manual-open manual-open-js"><div></div></a>
@@ -245,7 +256,7 @@
 												<div class="input-file-row-1">
 												
 													<div class="upload-file-container">
-														<img class="image" src="#" alt="" />						
+														<img class="image" src="images/img.png" alt="" />						
 														<div class="upload-file-container-text">
 															<span>Add<br />photo</span>
 															<input type="file" name="pic[]" class="photo imgInput" />
@@ -260,6 +271,10 @@
 
 								<div class="triangles"></div>
 							</div>
+
+		
+
+
 							<div class="regulation-content">
 								<div class="row-block clearfix">
 									<div class="col-3">
@@ -332,32 +347,12 @@
 										<input class="form-control blue" type="text" placeholder="מספר דו&quot;ח">
 										<div class="dots-block"><a href="" class="icon icon-manual-3dots"></a></div>
 									</div>
+									<div class="col-6">
+										<input class="form-control" type="text" placeholder="מספר דו&quot;ח">
+										<div class="dots-block"><a href="" class="icon icon-manual-3dots"></a></div>
+									</div>
 									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
-									</div>
-								</div>
-								<div class="full-line"></div>
-								<div class="row-block clearfix">
-									<span>הסעיך/תקנה</span>
-									<div class="form-line clearfix">
-										<div>תצטנפל בלינד! למרקל</div>
-										<div class="inl-form">
-											<input class="form-control" type="text">
-											<div class="dots-block"><a href="" class="icon icon-manual-3dots"></a></div>
-										</div>
-										<div>אס לכימפו, דול, צוט ומע'וט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום</div>
-									</div>
-									<div class="form-line">
-										<div>בלינך רוגצה</div>
-										<div class="inl-form">
-											<input class="form-control" type="text">
-											<div class="dots-block"><a href="" class="icon icon-manual-3dots"></a></div>
-										</div>
-										<div>מעט נזוסן מנת</div>
-									</div>
-									<div class="link-icons">
-										<a class="icon icon-edit" href=""></a>
-										<a class="icon icon-manual-plus" href=""></a>
 									</div>
 								</div>
 							</div>
@@ -392,7 +387,9 @@
 							</div>
 							<div class="regulation-content">
 								<div class="row-block clearfix">
-									<div class="col-4 col-icon">
+
+
+									<div class="col-3 col-icon">
 										<a href="" class="icon icon-ticket"></a>
 										<div class="input-margin-left">
 											<div class="dropdown">
@@ -416,50 +413,38 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-4">
+
+
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
-								</div>
-								<div class="row-block clearfix">
-									<div class="col-4 col-icon">
+
+									<div class="col-3 col-icon">
 										<a href="" class="icon icon-ticket"></a>
 										<div class="input-margin-left">
-											<input class="form-control" type="text" placeholder="מספר זהות/">
+											<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 										</div>
 									</div>
-									<div class="col-4">
+
+								</div>
+								<div class="row-block clearfix">
+									<div class="col-6">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
-									<div class="col-4">
+									<div class="col-3">
+										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
+									</div>
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
 									<div class="link-icons">
 										<a class="icon icon-edit" href=""></a>
 									</div>
 								</div>
-								<div class="full-line"></div>
-								<div class="row-block clearfix">
-									<div class="col-4">
-										<input class="form-control" type="text" placeholder="מספר זהות/">
-									</div>
-									<div class="col-4">
-										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
-									</div>
-									<div class="col-4">
-										<div class="row clearfix">
-											<div class="col-6">
-												<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
-											</div>
-											<div class="col-6">
-												<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
-											</div>
-										</div>
-									</div>
-									<a href="">במעשי כשגם</a>
-								</div>
+	
 							</div>
 						</div>
 						<div class="wrap-regulation-block">
@@ -492,38 +477,31 @@
 							</div>
 							<div class="regulation-content">
 								<div class="row-block clearfix">
-									<div class="col-4">
+									<div class="col-3">
 										<a href="" class="icon icon-manual-car"></a>
 										<div class="input-margin-left">	
 											<div class="dots-block"><a href="" class="icon icon-manual-3dots"></a></div>
 											<input class="form-control blue" type="text" placeholder="מספר דו&quot;ח">
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
-									<div class="col-4">
-										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
-										<div class="text-danger warning-block"><i class="icon icon-manual-error"></i> הקלו אותיות לועזיות וספרות בלבד</div>
-									</div>
-								</div>
-								<div class="row-block clearfix">
-									<div class="col-4 col-icon">
-										<a href="" class="icon icon-ticket"></a>
-										<div class="input-margin-left">
-											<input class="form-control" type="text" placeholder="מספר זהות/">
-											<div class="footnote"><i class="icon icon-manual-asterisk"></i>הקלו אותיות לועזיות וספרות בלבד</div>
-										</div>
-									</div>
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
-									<div class="link-icons">
-										<a class="icon icon-edit" href=""></a>
+									<div class="col-3">
+										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
+									</div>
+									<div class="col-3">
+										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
 								</div>
 							</div>
 						</div>
+				
+
+
 						<div class="wrap-regulation-block">
 							<a href="" class="btn btn-primary btn-sm">תאור העובדות המהוות את העב'רה</a>
 							<div class="regulation-block">
@@ -554,14 +532,14 @@
 							</div>
 							<div class="regulation-content">
 								<div class="row-block clearfix">
-									<div class="col-4">
+									<div class="col-3">
 										<div class="dots-block"><a href="" class="icon icon-manual-calendar"></a></div>
 										<input class="form-control blue" type="text" placeholder="מספר דו&quot;ח">
 									</div>
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
 								</div>
@@ -593,13 +571,13 @@
 									</div>
 								</div>
 								<div class="row-block clearfix">
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control blue" type="text" placeholder="מספר דו&quot;ח">
 									</div>
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
 									<div class="link-icons">
@@ -638,10 +616,10 @@
 							</div>
 							<div class="regulation-content">
 								<div class="row-block clearfix">
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control blue" type="text" placeholder="מספר דו&quot;ח">
 									</div>
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
 									<div class="link-icons">
@@ -680,24 +658,24 @@
 							</div>
 							<ol class="regulation-content">
 								<li class="row-block clearfix">
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control blue" type="text" placeholder="מספר דו&quot;ח">
 									</div>
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
-									<div class="col-4">
+									<div class="col-6">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
 								</li>
 								<li class="row-block clearfix">
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control blue" type="text" placeholder="מספר דו&quot;ח">
 									</div>
-									<div class="col-4">
+									<div class="col-3">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
-									<div class="col-4">
+									<div class="col-6">
 										<input class="form-control" type="text" placeholder="מספר מקור דו&quot;ח">
 									</div>
 									
@@ -886,13 +864,27 @@
 				</section>
 				
 				<aside class="main-sidebar">
-					<div class="column-width">
+					<div>
 						<div class="sidebar-header">
 							<a class="close icon-close" href=""></a>
 							<h2 class="title-large">הדוח הסרוק במלוא</h2>
 						</div>
 						<div class="sidebar-content">
-							<img src="images/sidebar-image.jpg" alt="">
+							<div class="regulation-form">
+								<div class="form-line clearfix">
+									תצטנפל בלינד! למרקל
+									<div class="inl-form">
+										<input type="text" class="form-control">
+										<div class="dots-block"><a class="icon icon-manual-3dots" href=""></a></div>
+									</div>
+									אס לכימפו, דול, צוט ומע'וט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום
+									<div class="inl-form">
+										<input type="text" class="form-control">
+										<div class="dots-block"><a class="icon icon-manual-3dots" href=""></a></div>
+									</div>
+									מעט נזוסן מנת
+								</div>
+							</div>
 						</div>
 					 </div>
 				</aside>

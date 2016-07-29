@@ -38,7 +38,7 @@
 		display: inline-block;
 		position: relative;
 		i {
-			background: #f1ad1c;
+			background: #fcbc12;
 			color: #fff;
 			border-radius: 100%;
 			position: absolute;
@@ -212,5 +212,16 @@
 		&:first-child {
 			margin-left: 0;
 		}
-	}	
+		&:hover {
+			color: #fff;
+			background: #fcbc12;
+			border-color: #fff;
+		}
+		&.acive {
+			color: #fff;
+			border-color: #fff;
+			background: #fcbc12;
+		}
+	}
+
 }

@@ -82,6 +82,12 @@ a.btn {
 }
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  &:hover {
+    background: $btn-primary-bg-hover;
+  }
+  &:adctive {
+    background: $btn-primary-bg-active;
+  }
 }
 // Success appears as green
 .btn-success {
@@ -198,7 +204,49 @@ a.btn {
     background-color: #868686;
     color: #fff;
   }
+  &:active {
+    background: #4c4c4c;
+  }
 }
+
+.btn-arrow-left {
+  position: relative;
+  padding-left: 67px;
+  .icon-home-messages-v {
+    background: #aeaeae;
+    font-size: 14px;
+    height: 24px;
+    line-height: 22px;
+    width: 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: 10px;
+  }
+  &:after {
+    content: "";
+    display: block;
+    border-right: 8px solid #969696;
+    border-top: 21px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: 100%;
+    top: -1px;
+  }
+  &:hover {
+    &:after {
+      border-right-color: #868686;
+    }
+  }
+  &:active {
+    &:after {
+      border-right-color: #4c4c4c;
+    }
+  }
+}
+
 .btn-thin{
   font-weight: 300;
 }
@@ -283,4 +331,38 @@ input[type="button"] {
   border-radius: 100%;
   text-align: center;
   line-height: 22px;
+}
+
+.radio-style {
+  border: 1px solid #cccccc;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  background: #fff;
+  padding: 1px;
+  border-radius: 31px;
+  white-space: nowrap;
+  > div {
+    display: inline-block;
+    line-height: 27px;
+    border-radius: 27px;
+    padding: 0 25px;
+  }
+  input {
+    display: none;
+    &:checked {
+      + div {
+        background: #00a2e0;
+        color: #fff;
+        text-align: center;
+      }
+    }
+    &:not(:checked) {
+      + div + div {
+        background: #00a2e0;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
 }

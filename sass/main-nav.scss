@@ -60,6 +60,30 @@
 		.curent {
 			background: #fcbd0e;
 			color: #1f232f;
+			position: relative;
+			border-color: transparent;
+			&:after {
+				content: " "; 
+				display: block;
+				border-top: 20px solid transparent;
+				border-bottom: 20px solid transparent;
+				border-right: 5px solid #fcbd0e;
+				position: absolute;
+				right: 100%;
+				top: 0;
+			}
+		}
+		.menu-content2 {
+			li {
+				&:hover {
+					a {
+						background: #b5e4f6;
+					}
+					.open-menu-button {
+						display: block;
+					}		
+				}
+			}
 		}
 	}
 }
@@ -124,6 +148,14 @@
 						background: #f2fafd;
 						padding: 3px;
 						border-bottom: 1px solid #d3e0e8;
+						&:hover {
+							background: #b5e4f6;
+						}
+					}
+					.selected {
+						a {
+							background: #b5e4f6;
+						}
 					}
 				}
 			}
@@ -139,9 +171,11 @@
 	list-style: none;
 	li {
 		margin: 1px 0 0 0;
+		position: relative;
 		&:first-child {
 			margin-top: 0;
 		}
+
 	}
 	a {
 		background: #f2fafd;
@@ -150,10 +184,10 @@
 		position: relative;
 		display: block;
 		padding: 5px 5px;
-		&:hover {
-			.open-menu-button {
-				display: block;
-			}		
+	}
+	.selected {
+		a {
+			background: #b5e4f6;
 		}
 	}
 	.open-menu-button {

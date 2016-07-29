@@ -1,3 +1,12 @@
+button:active:hover, input[type="color"]:-moz-system-metric(color-picker-available):active:hover, input[type="reset"]:active:hover, input[type="button"]:active:hover, input[type="submit"]:active:hover {
+    padding-block-end: 0;
+    padding-block-start: 0;
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+}
+.icon:hover{
+	text-decoration: none;
+}
 .search-wrap {
 	width: 575px;
 	padding-left: 20px;
@@ -28,6 +37,12 @@
 		color: #fff;
 		display: block;
 	}
+	&:hover {
+		background: #00a2e0;
+	}
+	&:active {
+		background: #0092d3;
+	}
 }
 
 .search-dropdown-title {
@@ -40,7 +55,8 @@
 	border-right: 1px solid #cdcdcd;
 	position: relative;
 	display: block;
-	&:hover {
+	&:hover, &:active {
+		color: #6f6f6f;
 		text-decoration: none;
 	}
 

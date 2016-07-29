@@ -141,7 +141,7 @@
 	}
 }
 .title-yellow{
-	color: #fabb16;
+	color: #fcbc12;
 	font-weight: 400;
 	font-size: 24px;
 	margin-top: 2px;
@@ -151,10 +151,14 @@
 	display: inline-block;
 	letter-spacing: 0;
 	a{
-		color: #fabb16;
+		color: #fcbc12;
 		text-decoration: underline;
 		&:hover{
 			text-decoration: none;
+			color: #ffcc4a;
+		}
+		&:active{
+			color: #f4a800;
 		}
 	}
 }

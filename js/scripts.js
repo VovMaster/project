@@ -167,4 +167,31 @@ $(document).ready(function(){
 		});
 	});
 
+
+
+	function readURL(input, thisIn) {
+
+		var inputForImg = thisIn.closest('.for-img').find('.image');
+
+	    if (input.files && input.files[0]) {
+	        var reader = new FileReader();
+
+	        reader.onload = function (e) {
+	            inputForImg.attr('src', e.target.result);
+	        };
+
+	        reader.readAsDataURL(input.files[0]);
+	    }
+	}
+
+	$(".imgInput").change(function(){
+		var thisIn = $(this);
+	    readURL(this, thisIn);
+	});
+
+	$('.manual-open-js').click(function(){
+		$(this).closest('.wrap-regulation-block').toggleClass('regulation-block-open');
+		return false
+	});
+ 
 });

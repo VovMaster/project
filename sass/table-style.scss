@@ -143,9 +143,6 @@ td {
 		left: 8px;
 		top: 5px;
 	}
-	.dropdown-content {
-		margin-top: 2px;
-	}
 }
 .date{
 	background-color: #d3d3d3;
@@ -266,7 +263,8 @@ td {
 		display: inline-block;		
 		&:hover, &:focus {
 			text-decoration: none;
-		}	}
+		}	
+	}
 	.icon-Person-history-wheel{
 		width: 22px;
 		height: 22px;
@@ -280,7 +278,7 @@ td {
 		margin-top: 4px;
 		position: relative;
 		> i{
-			background: #f1ad1c none repeat scroll 0 0;
+			background: #fcbc12 none repeat scroll 0 0;
 		    border: 2px solid #08306b;
 		    border-radius: 100%;
 		    color: #fff;
@@ -294,10 +292,16 @@ td {
 		    width: 20px;
 		    text-align: center;
 		}
+		&:hover, &:focus {
+			text-decoration: none;
+		}	
 	}
 	.icon-info{
 		color: #a7b2c4;
 		font-size: 18px;
+		&:hover, &:focus {
+			text-decoration: none;
+		}	
 	}
 	a{
 		margin-right: 5px;
@@ -388,6 +392,8 @@ td {
 }
 .item-style-user-info-header {
 	margin-bottom: 30px;
+	position: relative;
+	z-index: 2;
 }
 
 .text-button {
