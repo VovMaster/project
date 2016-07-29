@@ -211,6 +211,15 @@ a.btn {
 .btn-medium-gray{
   background-color: #cccccc;
   color: #ffffff;
+  &:hover {
+    background: #969696;
+    text-decoration: none;
+    color: #fff;
+  }
+  &:active {
+    background: #4c4c4c;
+    color: #fff;
+  }
 }
 .btn-arrow-left {
   position: relative;
@@ -359,7 +368,7 @@ input[type="button"] {
         text-align: center;
       }
     }
-    &:not(:checked) {
+    &:not(:checked) { 
       + div + div {
         background: #00a2e0;
         color: #fff;

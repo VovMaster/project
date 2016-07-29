@@ -191,7 +191,37 @@ $(document).ready(function(){
 
 	$('.manual-open-js').click(function(){
 		$(this).closest('.wrap-regulation-block').toggleClass('regulation-block-open');
+		return false 
+	});
+
+	$('.content-list-search').perfectScrollbar();
+	$('.search-dropdown-title').click(function(){
+		$(this).parent().toggleClass('openSearch');
+		if($(this).parent().hasClass('openSearch')){
+			$('.content-list-search').perfectScrollbar('update');
+		}
 		return false
+	});
+
+	$('.wraps-massege-notification > a').click(function(){
+		
+
+		if($(this).parent().hasClass('open')){
+			$('.wraps-massege-notification ').removeClass('open');
+		}else {
+			$('.wraps-massege-notification ').removeClass('open');
+			$(this).parent().addClass('open');	
+		}
+
+		
+		return false
+	});
+
+	$(document).mouseup(function (e){ 
+		var div = $(".wraps-massege-notification"); 
+		if (!div.is(e.target) && div.has(e.target).length === 0) { 
+			$('.wraps-massege-notification ').removeClass('open');
+		}
 	});
  
 });

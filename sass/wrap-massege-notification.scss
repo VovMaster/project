@@ -1,8 +1,18 @@
+.wraps-massege-notification{
+	position: relative;
+	&.open {
+		.wrap-massege-notification {
+			display: block;
+		}
+	}
+}
 .wrap-massege-notification{
 	position: absolute;
 	top: 100%;
-	left: 0;
-	width: 267px;
+	left: 50%;
+	margin-left: -134px;
+	display: none;
+	width: 268px;
 	padding: 3px 0;
 	background-color: #ffffff;
 	border: 1px solid #0092d3;
@@ -12,7 +22,7 @@
 	z-index: 4;
 	line-height: 14px;
 	font-size: 12px;
-	margin-top: 0;
+	margin-top: 20px;
 	&:before, &:after{
 		content: "";
 		width: 0;

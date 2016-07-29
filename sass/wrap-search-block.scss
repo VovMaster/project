@@ -1,13 +1,14 @@
 .wrap-search-block{
 	position: absolute;
 	top: 100%;
-	left: 20px;
+	left: 0;
 	right: 0;
 	padding: 7px 6px;
 	background-color: #ffffff;
 	border: 1px solid #f1f1f1;
-	margin-top: -9px;
+	margin-top: 0;
 	z-index: 4;
+	display: none;
 }
 .header-search-block{
 	background-color: #f4f4f4;
@@ -70,14 +71,16 @@
 		float: right;
 	}
 	a{
-		padding: 3px 15px;
+		padding: 6px 15px;
 		font-size: 17px;
+		display: block;
 		line-height: 20px;
 		color: #a8a8a8;
+		display: block;
 	}
 	.active{
 		background-color: #ffffff;
-		padding: 3px 26px;
+		padding: 6px 26px;
 		color: #00a2e0;
 		margin: 0 15px;
 		&:first-child{
@@ -87,6 +90,7 @@
 }
 .content-list-search{
 	list-style: none;
+	position: relative;
 	padding: 0 0 0 18px;
 	background-color: #ffffff;
 	color: #b4b4b4;

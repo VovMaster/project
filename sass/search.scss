@@ -16,7 +16,7 @@ button:active:hover, input[type="color"]:-moz-system-metric(color-picker-availab
 }
 .search {
 	position: relative;
-	.dropdown {
+	.dropdown-search {
 		position: absolute;
 		left: 44px;
 		top: 1px;
@@ -60,5 +60,31 @@ button:active:hover, input[type="color"]:-moz-system-metric(color-picker-availab
 		color: #6f6f6f;
 		text-decoration: none;
 	}
+	.open-dropdown {
+		font-size: 12px;
+		left: 15px;
+		position: absolute;
+		top: 6px;
+		color: #d3d3d3;
+	}
+	.close-dropdown {
+		color: #d3d3d3;
+		position: absolute;
+		display: none;
+		left: 9px;
+		top: 3px;
+		font-size: 12px;
+	}
 
+}
+.openSearch {
+	.open-dropdown {
+		display: none;
+	}
+	.close-dropdown  {
+		display: block;
+	}
+	+ .wrap-search-block {
+		display: block;
+	}
 }
