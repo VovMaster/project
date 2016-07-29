@@ -143,6 +143,28 @@ td {
 		left: 8px;
 		top: 5px;
 	}
+	.btn{
+		float: left;
+		margin-top: -1px;
+	}
+}
+.btn-border-style{
+	line-height: 16px;
+	font-weight: 400;
+	font-size: 12px;
+	padding: 3px 25px;
+	&.blue{
+		border: 2px solid #00a2e0;
+		color: #00a2e0;
+	}
+	&.red{
+		border: 2px solid #b21622;
+		color: #b21622;
+	}
+	.large{
+		font-size: 18px;
+		margin-right: 5px;
+	}
 }
 .date{
 	background-color: #d3d3d3;
@@ -217,7 +239,6 @@ td {
 	 > span{
 	 	position: relative;
 	 	> i{
-	 		background-color: #dda;
 		    background-image: url("../images/red-circle.jpg");
 		    background-position: 0 0;
 		    display: block;

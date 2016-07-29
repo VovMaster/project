@@ -208,7 +208,10 @@ a.btn {
     background: #4c4c4c;
   }
 }
-
+.btn-medium-gray{
+  background-color: #cccccc;
+  color: #ffffff;
+}
 .btn-arrow-left {
   position: relative;
   padding-left: 67px;
@@ -246,7 +249,6 @@ a.btn {
     }
   }
 }
-
 .btn-thin{
   font-weight: 300;
 }
